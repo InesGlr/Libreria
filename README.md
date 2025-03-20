@@ -11,7 +11,7 @@
 <h2> Tecnologías ⚙ </h2>
 <ul>
     <li><b>PHP: </b> backEnd, procesa las peticiones y realiza la interacción con la BD a traves del servidor Apache de <b>XAMPP</b></li>
-    <li><b>HTML, CSS y BootsTrap:</b> estructura y organización de los elementos</li>
+    <li><b>HTML:</b> estructura y organización de los elementos</li>
     <li><b> CSS y BootsTrap:</b> UI, diseño responsivo y visual</li>
     <li><b>BD SQL:</b> almacena y gestiona la información</li>
 </ul>
