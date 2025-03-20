@@ -1,0 +1,283 @@
+/*******************************                     GENERAL                            ****************************************/
+*{
+    padding: 0;
+    margin:0;
+    font-family: Cambria;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+        'cabecero cabecero'
+        'navegador principal'
+        'pie pie';
+    grid-template-columns: 1fr 4fr; 
+    grid-template-rows: 140px minmax(400px, 1fr) 160px;
+    overflow-x: hidden; 
+}
+
+.barra_inferior, .barra_inferior form, .cab_der{
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+header a:hover, footer a:hover{
+    color: #f9f9f9;
+}
+
+
+/*********************                CABECERO               ************************/
+header{
+    grid-area: cabecero; 
+}
+
+header > section{
+    display: flex;
+}
+
+/* Barra superior */
+.barra_superior{
+    background: linear-gradient(to right, #e47d00, #ffbb00);
+    color: #ffffff; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cab_der{ 
+    display: flex; 
+    padding-right: 80px;
+    padding-top: 10px;
+} 
+
+.cab_der > ul, .cab_izq{
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+} 
+
+header .submenu .bi{
+    color: #000 !important;
+    font-size: 1em;
+    font-style: normal;
+}
+
+header .submenu a:hover{
+    color: #000
+}
+
+.cab_izq{
+    margin-left: 20px;
+}
+
+
+/* Barra inferior */
+.barra_inferior form #busqueda{
+    min-width: 50vw;
+    height: 50px;
+    font-size: large;
+    border-radius: 10px  ;
+    border: solid ;
+    border-color: #f1eedd;
+}
+
+.barra_inferior .imagensearch{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+
+/*********************                NAVEGADOR               ************************/
+nav{
+    grid-area: navegador;
+   
+}
+nav ul{
+    bottom: 180px;
+} 
+
+
+/*********************                CUERPO PRINCIPAL               ************************/
+main{
+    grid-area: principal;
+}
+main img{ 
+    width: 500px;
+    width: 200px;
+}
+
+
+/*********************                PIE DE PAGINA               ************************/
+footer{
+    grid-area: pie;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right, #e47d00, #ffbb00);
+    color: #f9f9f9;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    padding: 10px;
+}
+
+.pie_izq, .pie_der{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pie_izq ul, .pie_der ul{
+    padding: 0;
+    margin: 0;
+}
+
+.pie_der ul{
+    display: flex;
+}
+
+.pie_izq ul li, .pie_der ul li{
+    margin: 5px; 
+}
+
+footer .bi, .barra_superior .bi{
+    color: #f9f9f9;
+}
+
+
+/*********************                OTRAS COSAS               ************************/
+li{
+    list-style-type: none;
+}
+
+.cab_der img, .barra_inferior input, .navegador, footer li, a{
+    opacity: 85%;
+}
+
+.cab_der img:hover, .barra_inferior input:hover, .navegador:hover, footer li:hover, a:hover{
+    opacity: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+
+/* Menus desplegables */
+.menu-desplegable{
+    position: relative;
+    display: block;
+}
+
+.submenu{
+    width: 200px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: -50px;
+    background: linear-gradient(to right, #ffe0a5, #fffac3);
+    color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    margin-right: 4px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.menu-desplegable li{
+    padding: 10px;
+
+}
+.menu-desplegable li:hover {
+    background: linear-gradient(to right, #FF8C00, #FFD700);
+    border-radius: 10px;
+}
+
+.menu-desplegable:hover .submenu{
+    display: block;
+}
+
+.desplegable:hover{
+    color: gray;
+}
+
+
+/* Iconos */
+.bi {
+    font-size: 2em; 
+    padding: 0 0.5em;
+}
+
+/* Navegador Lateral */
+#abrir_nav{
+    position: absolute;
+    visibility: hidden;
+    font-size: 30px;
+    left: 20px; 
+    cursor: pointer;
+    color: black;
+}
+
+#navegador_lateral{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    background: linear-gradient(to right, #ffe0a5, #fffac3);
+    overflow-x: visible;
+    transition: 0.5s;
+    padding-top: 0px 60px; 
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#navegador_lateral a{
+    list-style: none;
+    border-radius: 10px;   
+}
+
+#navegador_lateral a:hover{
+    background: linear-gradient(to right, #FF8C00, #FFD700);
+}
+
+#navegador_lateral a#sinHover:hover{
+    background: none;
+    color: #000000;
+}
+
+#navegador_lateral a{
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+#navegador_lateral a:hover{
+    color: #f1f1f1;
+}
+
+#navegador_lateral #cerrar_nav{
+    color: rgb(66, 7, 7);   
+}
+
+#navegador_lateral #cerrar_nav:hover{
+    color: rgb(124, 19, 19);
+}
+    color: rgb(124, 19, 19);
+}

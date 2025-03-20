@@ -1,0 +1,117 @@
+main{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+main .pedidos{
+    padding: 10px 20px; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; 
+    align-self: center; 
+    border: 1px rgb(185, 185, 185) solid;
+    border-radius: 8px;
+    margin: 5px;
+    background: #faf3f3;
+}
+
+.primera_barra{
+    border-bottom: 1px rgb(185, 185, 185) solid;
+
+}
+
+.primera_barra ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left; 
+
+}
+
+.primera_barra ul li{
+    padding: 1px 14px;
+}
+
+.informacion form div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+main img{
+    width: 60px;
+    height: 70px;
+    border-radius: 4px;
+}
+
+.btninform, .btn_devolver{
+    color: #ffffff;
+    background: #48474d;
+    border-radius: 4px;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+input[type="checkbox"]{
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-self: center;
+}
+
+.pCantidad{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+main a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 60%;
+}
+
+.advertencia{
+    text-align: center;
+}
+
+.infoInteres{
+    font-weight: bold;
+    color: rgb(160, 13, 13);
+}
+
+h3{
+    margin-top: 12px;
+}
+
+.pedidos.devueltos{
+    width: 700px;
+}
+
+.listaDev{
+    padding: 4px ;
+}
+
+.devInfi{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.devInfi div{
+    align-self: center;
+}
+
+.devInfi div a{
+    width: 100%;
+}
+
+.cantDev{
+    padding: 2em 0;
+    justify-content: flex-start; 
+}

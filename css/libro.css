@@ -1,0 +1,116 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 40px;
+}
+
+article{
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    padding-top: 40px;
+    display: flex;  
+}
+
+.img-libro{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    width: 200px;
+}
+
+aside{
+    grid-column: 3 / span 1;
+    grid-row: 1;
+    padding-top: 40px;  
+}
+
+.caja-aside{
+    display: flex;
+    flex-direction: column;
+    text-align:start;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.carro{
+    margin-top: -20px;
+    margin-left: -15px;
+}
+#corazon{
+    margin-left: 40px;
+}
+
+.h2-caracteristicas{
+    padding-left: 30px;
+} 
+
+section{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+.descripcion{
+    padding-right: 120px;
+    text-align: justify;
+}
+
+main img{
+    width: 280px;
+    height: 390px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.libro-info {
+    display: flex;
+    list-style-type: none;
+}
+
+.img-libro{
+    margin-right: 30px; 
+}
+
+.article{
+    margin-left: 90px;
+}
+
+.titulo-libro{
+    font-size: 40px;
+}
+
+.precio{
+    font-size: 30px;
+}
+
+.caja-cantidad{
+    width: 80px;
+    border: none;
+}
+
+.alerta-sesion{
+    max-width: 100%; 
+    height: 50px;
+    background-color: #f8d7da; 
+    color: #c9192b;
+    font-size: 15px;
+    padding: 10px; 
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    border-color: #c9192b; 
+    border: solid 2px;
+    margin: 10px 40px; 
+}
+
+.alerta-sesion i{
+    font-size: 15px;
+}
+
+.alerta-sesion a{
+    color: #c9192b;
+}
+
+.noStock{
+    color:#c9192b  ;
+}

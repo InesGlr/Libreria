@@ -1,0 +1,76 @@
+main{
+    display: grid;
+    grid-template-columns:230px 1fr;
+    margin: 30px 50px;
+}
+
+img{
+    height: 170px; 
+    max-width: 150px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.info{
+    grid-column: 2 / span 2;
+
+}
+
+.caja-img{
+    grid-column: 1 / span 1;
+}
+
+.lista-direccion{
+    grid-column: 1 / span 3;
+    border-top: 3px solid rgba(0, 0, 0, 0.148);
+    margin-top: 50px;
+    padding: 0;
+}
+
+.lista-correo{
+    grid-column: 1 / span 4;
+    border-top: 3px solid rgba(0, 0, 0, 0.148);
+    padding: 0;
+}
+
+.estilo-parrafo{
+    grid-column: 1 / span 2;
+    font-size: 30px;
+}
+
+.precio{
+    font-size: 25px;
+    border-bottom: 1px solid;
+    border-color: rgb(217, 212, 212);
+}
+
+#mostrarFormulario{
+    background: rgb(243, 180, 45);
+    color: white;
+    border-radius: 4px;
+    padding: 0.4em;
+    margin: 8px;
+}
+
+#mostrarFormulario:hover{
+    background: rgb(255, 153, 0);
+}
+
+.boton-comprar{
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(255, 153, 0);
+}
+
+.boton-comprar:hover{
+    background: rgb(243, 180, 45);
+}
+
+
+.advertencia{
+    text-align: center;
+    padding: 30px;
+}

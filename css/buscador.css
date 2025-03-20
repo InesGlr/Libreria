@@ -1,0 +1,52 @@
+main {
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.h1-buscador{
+
+    display: flex;
+    position:relative;
+    left: 35px;
+}
+.libro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ul-busqueda{
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    
+}
+img {
+    max-width: 100%;
+    height: 300px; /* Si lo dejo en auto, cada imagen se ve de tamaño diferente */
+    width: 150px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+.formato{
+    border-top: 1px solid;
+    border-color: rgb(217, 212, 212);
+    
+}
+.precio{
+    font-size: 25px;
+}
+.nombre{
+    width: 250px;
+}
+.libro li a strong {
+    font-weight: bold;
+}
+.advertencia{
+    text-align: center;
+    padding: 60px;
+}

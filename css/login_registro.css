@@ -1,0 +1,31 @@
+.registro, .login{
+    display: grid;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+}
+
+main input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin: 5px;
+}
+
+.botones{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Alertas de errores */
+.rojo{
+    color: red;
+}
+
+a:hover{
+    color: rgb(99, 98, 98);
+}
