@@ -359,7 +359,7 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`IdUsuario`, `Nombre`, `Clave`, `Saldo`, `Correo`, `Telefono`, `Direccion`) VALUES
-(1, 'Pedro', '1234', '1809.65', 'cristinabrcjs@gmail.com', '620402364', 10),
+(1, 'Pedro', '1234', '1809.65', 'pedrojs@gmail.com', '620402364', 10),
 (2, 'Sandra', '1234', '1000.00', 'sandrita00@gmail.com', '665482105', 4),
 (3, 'Alicia', '1234', '2000.00', 'alicia2001@gmail.com', '662473155', 1),
 (4, 'Juan', '1234', '3000.00', 'juan@gmail.com', '663490154', 3),
